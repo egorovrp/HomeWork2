@@ -23,4 +23,23 @@
 Подсказка: Возможно, вам понадобится округление чисел и оператор %.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+//1-й пример:
+const userNumber = 163;
+const firstNumber = Math.trunc(userNumber / 100);
+const secondNumber = Math.trunc((userNumber / 10) % 10);
+const thirdNumber = userNumber % 10;
+console.log(`В числе ${userNumber} количество сотен: ${firstNumber}, десятков: ${secondNumber}, единиц: ${thirdNumber}`);
+
+//2-й пример:
+// const userNumber = 74;
+// const firstNumber = Math.trunc(userNumber / 100);
+// const secondNumber = Math.trunc((userNumber / 10) % 10);
+// const thirdNumber = userNumber % 10;
+// console.log(`В числе ${userNumber} количество сотен: ${firstNumber}, десятков: ${secondNumber}, единиц: ${thirdNumber}`);
+
+//3-й пример:
+// const userNumber = 9537;
+// const firstNumber = Math.trunc(userNumber / 100) % 10;
+// const secondNumber = Math.trunc((userNumber / 10) % 10);
+// const thirdNumber = userNumber % 10;
+// console.log(`В числе ${userNumber} количество сотен: ${firstNumber}, десятков: ${secondNumber}, единиц: ${thirdNumber}`);
